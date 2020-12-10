@@ -1,7 +1,11 @@
-let sumOfNumbers = 0;
-for(i = 1; i < 10; i++) {
-  if(i % 3 === 0 || i % 5 === 0){
-    sumOfNumbers += i;
+function solution(number) {
+  let sumOfNumbers = 0;
+  for (i = 1; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sumOfNumbers += i;
+    }
   }
-}
-console.log(sumOfNumbers);
+  return (sumOfNumbers)
+};
+
+console.log(solution(20,78))

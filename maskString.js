@@ -2,11 +2,11 @@
 function maskify(cc) {
   let maskedString = "";
   let last4 = cc.substring(cc.length - 4);
-  for(i = cc.length-4; i > 0; i--) {
+  for (i = cc.length - 4; i > 0; i--) {
     maskedString += '#';
   }
   return (maskedString + last4);
-
+  return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
 }
 
 console.log(maskify("1234567890"));
